@@ -37,10 +37,10 @@
     --radius: 1rem;
 
     /* Custom tokens */
-    --gradient-primary: linear-gradient(135deg, hsl(245 58% 51%), hsl(280 60% 55%));
-    --gradient-hero: linear-gradient(135deg, hsl(230 30% 8%), hsl(255 40% 15%));
+    --gradient-primary: linear-gradient(135deg, hsl(217 91% 50%), hsl(199 89% 48%));
+    --gradient-hero: linear-gradient(135deg, hsl(220 30% 8%), hsl(217 40% 15%));
     --gradient-card: linear-gradient(135deg, hsl(0 0% 100% / 0.8), hsl(0 0% 100% / 0.4));
-    --gradient-accent: linear-gradient(135deg, hsl(245 58% 51% / 0.1), hsl(280 60% 55% / 0.1));
+    --gradient-accent: linear-gradient(135deg, hsl(217 91% 50% / 0.1), hsl(199 89% 48% / 0.1));
     --glass-bg: hsl(0 0% 100% / 0.6);
     --glass-border: hsl(0 0% 100% / 0.3);
     --shadow-soft: 0 4px 24px -4px hsl(217 91% 50% / 0.1);
