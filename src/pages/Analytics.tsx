@@ -10,7 +10,7 @@ const Analytics = () => {
 
   const barData = sortedByProfit.map(p => ({ name: p.name.split(" ").slice(0, 2).join(" "), profit: Number(p.profit.toFixed(2)), revenue: Number(p.revenue.toFixed(2)) }));
 
-  const COLORS = ["hsl(245, 58%, 51%)", "hsl(280, 60%, 55%)", "hsl(152, 60%, 42%)", "hsl(210, 80%, 55%)", "hsl(38, 92%, 50%)", "hsl(0, 72%, 51%)"];
+  const COLORS = ["hsl(217, 91%, 50%)", "hsl(199, 89%, 48%)", "hsl(152, 60%, 42%)", "hsl(210, 80%, 55%)", "hsl(38, 92%, 50%)", "hsl(0, 72%, 51%)"];
   const pieData = productsWithMetrics.map(p => ({ name: p.name.split(" ").slice(0, 2).join(" "), value: Number(p.profit.toFixed(2)) }));
 
   return (
@@ -30,7 +30,7 @@ const Analytics = () => {
               <XAxis dataKey="name" tick={{ fontSize: 11, fill: "hsl(225, 10%, 45%)" }} axisLine={false} tickLine={false} />
               <YAxis tick={{ fontSize: 11, fill: "hsl(225, 10%, 45%)" }} axisLine={false} tickLine={false} />
               <Tooltip contentStyle={{ borderRadius: "12px", border: "1px solid hsl(225, 15%, 90%)" }} />
-              <Bar dataKey="profit" fill="hsl(245, 58%, 51%)" radius={[6, 6, 0, 0]} />
+              <Bar dataKey="profit" fill="hsl(217, 91%, 50%)" radius={[6, 6, 0, 0]} />
             </BarChart>
           </ResponsiveContainer>
         </div>
