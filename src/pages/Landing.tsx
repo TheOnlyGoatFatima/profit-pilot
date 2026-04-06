@@ -22,10 +22,10 @@ const Landing = () => {
             <a href="#testimonials" className="hover:text-foreground transition-colors">Testimonials</a>
           </div>
           <div className="flex items-center gap-3">
-            <button onClick={() => navigate("/login")} className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+            <button onClick={() => navigate("/app")} className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
               Log in
             </button>
-            <button onClick={() => navigate("/signup")} className="text-sm font-medium px-4 py-2 rounded-lg gradient-primary text-primary-foreground hover:opacity-90 transition-opacity">
+            <button onClick={() => navigate("/app")} className="text-sm font-medium px-4 py-2 rounded-lg gradient-primary text-primary-foreground hover:opacity-90 transition-opacity">
               Get Started
             </button>
           </div>
