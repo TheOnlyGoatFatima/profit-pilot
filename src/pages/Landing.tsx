@@ -22,10 +22,10 @@ const Landing = () => {
             <a href="#testimonials" className="hover:text-foreground transition-colors">Testimonials</a>
           </div>
           <div className="flex items-center gap-3">
-            <button onClick={() => navigate("/login")} className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+            <button onClick={() => navigate("/app")} className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
               Log in
             </button>
-            <button onClick={() => navigate("/signup")} className="text-sm font-medium px-4 py-2 rounded-lg gradient-primary text-primary-foreground hover:opacity-90 transition-opacity">
+            <button onClick={() => navigate("/app")} className="text-sm font-medium px-4 py-2 rounded-lg gradient-primary text-primary-foreground hover:opacity-90 transition-opacity">
               Get Started
             </button>
           </div>
@@ -48,7 +48,7 @@ const Landing = () => {
             Track inventory, calculate real profit, and make smarter pricing decisions — all in one beautiful dashboard.
           </p>
           <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center animate-slide-up" style={{ animationDelay: "0.2s" }}>
-            <button onClick={() => navigate("/signup")} className="inline-flex items-center gap-2 px-8 py-3.5 rounded-xl gradient-primary text-primary-foreground font-semibold text-base hover:opacity-90 transition-all hover:shadow-lg hover:scale-[1.02] active:scale-[0.98]">
+            <button onClick={() => navigate("/app")} className="inline-flex items-center gap-2 px-8 py-3.5 rounded-xl gradient-primary text-primary-foreground font-semibold text-base hover:opacity-90 transition-all hover:shadow-lg hover:scale-[1.02] active:scale-[0.98]">
               Get Started Free <ArrowRight className="w-4 h-4" />
             </button>
             <button className="inline-flex items-center gap-2 px-8 py-3.5 rounded-xl bg-card text-foreground font-semibold text-base border border-border hover:bg-secondary transition-all shadow-card">
@@ -131,7 +131,7 @@ const Landing = () => {
           <div className="max-w-2xl mx-auto p-12 rounded-3xl gradient-hero grain relative overflow-hidden">
             <h2 className="text-3xl sm:text-4xl font-bold text-primary-foreground relative z-10">Ready to know your real profit?</h2>
             <p className="mt-4 text-primary-foreground/70 text-lg relative z-10">Join hundreds of business owners making smarter decisions.</p>
-            <button onClick={() => navigate("/signup")} className="mt-8 inline-flex items-center gap-2 px-8 py-3.5 rounded-xl bg-primary-foreground text-foreground font-semibold hover:opacity-90 transition-all relative z-10">
+            <button onClick={() => navigate("/app")} className="mt-8 inline-flex items-center gap-2 px-8 py-3.5 rounded-xl bg-primary-foreground text-foreground font-semibold hover:opacity-90 transition-all relative z-10">
               Start Free <ArrowRight className="w-4 h-4" />
             </button>
           </div>
