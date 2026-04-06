@@ -3,8 +3,14 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
-import Index from "./pages/Index.tsx";
-import NotFound from "./pages/NotFound.tsx";
+import Landing from "./pages/Landing";
+import Dashboard from "./pages/Dashboard";
+import Products from "./pages/Products";
+import Analytics from "./pages/Analytics";
+import CashFlow from "./pages/CashFlow";
+import SettingsPage from "./pages/Settings";
+import AppLayout from "./components/AppLayout";
+import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
 
@@ -15,8 +21,12 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Index />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+          <Route path="/" element={<Landing />} />
+          <Route path="/app" element={<AppLayout><Dashboard /></AppLayout>} />
+          <Route path="/app/products" element={<AppLayout><Products /></AppLayout>} />
+          <Route path="/app/analytics" element={<AppLayout><Analytics /></AppLayout>} />
+          <Route path="/app/cashflow" element={<AppLayout><CashFlow /></AppLayout>} />
+          <Route path="/app/settings" element={<AppLayout><SettingsPage /></AppLayout>} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
