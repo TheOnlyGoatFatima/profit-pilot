@@ -30,7 +30,7 @@ const Analytics = () => {
               <XAxis dataKey="name" tick={{ fontSize: 11, fill: "hsl(225, 10%, 45%)" }} axisLine={false} tickLine={false} />
               <YAxis tick={{ fontSize: 11, fill: "hsl(225, 10%, 45%)" }} axisLine={false} tickLine={false} />
               <Tooltip contentStyle={{ borderRadius: "12px", border: "1px solid hsl(225, 15%, 90%)" }} />
-              <Bar dataKey="profit" fill="hsl(217, 91%, 50%)" radius={[6, 6, 0, 0]} />
+              <Bar dataKey="profit" fill="hsl(234, 70%, 56%)" radius={[6, 6, 0, 0]} />
             </BarChart>
           </ResponsiveContainer>
         </div>

@@ -59,8 +59,8 @@ const Dashboard = () => {
             <AreaChart data={revenueChartData}>
               <defs>
                 <linearGradient id="colorRevenue" x1="0" y1="0" x2="0" y2="1">
-                  <stop offset="5%" stopColor="hsl(217, 91%, 50%)" stopOpacity={0.2} />
-                  <stop offset="95%" stopColor="hsl(217, 91%, 50%)" stopOpacity={0} />
+                  <stop offset="5%" stopColor="hsl(234, 70%, 56%)" stopOpacity={0.2} />
+                  <stop offset="95%" stopColor="hsl(234, 70%, 56%)" stopOpacity={0} />
                 </linearGradient>
                 <linearGradient id="colorProfit" x1="0" y1="0" x2="0" y2="1">
                   <stop offset="5%" stopColor="hsl(152, 60%, 42%)" stopOpacity={0.2} />
@@ -71,7 +71,7 @@ const Dashboard = () => {
               <XAxis dataKey="month" tick={{ fontSize: 12, fill: "hsl(225, 10%, 45%)" }} axisLine={false} tickLine={false} />
               <YAxis tick={{ fontSize: 12, fill: "hsl(225, 10%, 45%)" }} axisLine={false} tickLine={false} />
               <Tooltip contentStyle={{ borderRadius: "12px", border: "1px solid hsl(225, 15%, 90%)", boxShadow: "0 4px 12px rgba(0,0,0,0.06)" }} />
-              <Area type="monotone" dataKey="revenue" stroke="hsl(217, 91%, 50%)" fillOpacity={1} fill="url(#colorRevenue)" strokeWidth={2} />
+              <Area type="monotone" dataKey="revenue" stroke="hsl(234, 70%, 56%)" fillOpacity={1} fill="url(#colorRevenue)" strokeWidth={2} />
               <Area type="monotone" dataKey="profit" stroke="hsl(152, 60%, 42%)" fillOpacity={1} fill="url(#colorProfit)" strokeWidth={2} />
             </AreaChart>
           </ResponsiveContainer>
