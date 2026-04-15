@@ -10,7 +10,7 @@ const Analytics = () => {
 
   const barData = sortedByProfit.map(p => ({ name: p.name.split(" ").slice(0, 2).join(" "), profit: Number(p.profit.toFixed(2)), revenue: Number(p.revenue.toFixed(2)) }));
 
-  const COLORS = ["hsl(217, 91%, 50%)", "hsl(199, 89%, 48%)", "hsl(152, 60%, 42%)", "hsl(210, 80%, 55%)", "hsl(38, 92%, 50%)", "hsl(0, 72%, 51%)"];
+  const COLORS = ["hsl(234, 70%, 56%)", "hsl(234, 50%, 68%)", "hsl(220, 80%, 55%)", "hsl(234, 35%, 78%)", "hsl(220, 60%, 45%)", "hsl(234, 25%, 50%)"];
   const pieData = productsWithMetrics.map(p => ({ name: p.name.split(" ").slice(0, 2).join(" "), value: Number(p.profit.toFixed(2)) }));
 
   return (
