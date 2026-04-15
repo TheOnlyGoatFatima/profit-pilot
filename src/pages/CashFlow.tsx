@@ -57,8 +57,8 @@ const CashFlow = () => {
             <XAxis dataKey="month" tick={{ fontSize: 12, fill: "hsl(225, 10%, 45%)" }} axisLine={false} tickLine={false} />
             <YAxis tick={{ fontSize: 12, fill: "hsl(225, 10%, 45%)" }} axisLine={false} tickLine={false} />
             <Tooltip contentStyle={{ borderRadius: "12px", border: "1px solid hsl(225, 15%, 90%)" }} />
-            <Bar dataKey="spent" fill="hsl(0, 72%, 51%)" radius={[6, 6, 0, 0]} name="Spent" />
-            <Bar dataKey="earned" fill="hsl(152, 60%, 42%)" radius={[6, 6, 0, 0]} name="Earned" />
+            <Bar dataKey="spent" fill="hsl(234, 50%, 68%)" radius={[6, 6, 0, 0]} name="Spent" />
+            <Bar dataKey="earned" fill="hsl(234, 70%, 56%)" radius={[6, 6, 0, 0]} name="Earned" />
           </BarChart>
         </ResponsiveContainer>
       </div>
