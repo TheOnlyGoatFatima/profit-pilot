@@ -16,10 +16,10 @@ const Landing = () => {
             <span className="text-lg font-bold text-foreground">ProfitLens</span>
           </div>
           <div className="flex items-center gap-3">
-            <button onClick={() => navigate("/app")} className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+            <button onClick={() => navigate("/login")} className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
               Log in
             </button>
-            <button onClick={() => navigate("/app")} className="text-sm font-medium px-4 py-2 rounded-lg gradient-primary text-primary-foreground hover:opacity-90 transition-opacity">
+            <button onClick={() => navigate("/register")} className="text-sm font-medium px-4 py-2 rounded-lg gradient-primary text-primary-foreground hover:opacity-90 transition-opacity">
               Get Started
             </button>
           </div>
@@ -37,8 +37,8 @@ const Landing = () => {
             Track inventory, see real profit, and make smarter decisions — all in one place.
           </p>
           <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center animate-slide-up" style={{ animationDelay: "0.2s" }}>
-            <button onClick={() => navigate("/app")} className="inline-flex items-center gap-2 px-8 py-3.5 rounded-xl gradient-primary text-primary-foreground font-semibold text-base hover:opacity-90 transition-all hover:shadow-lg hover:scale-[1.02] active:scale-[0.98]">
-              Open App <ArrowRight className="w-4 h-4" />
+            <button onClick={() => navigate("/register")} className="inline-flex items-center gap-2 px-8 py-3.5 rounded-xl gradient-primary text-primary-foreground font-semibold text-base hover:opacity-90 transition-all hover:shadow-lg hover:scale-[1.02] active:scale-[0.98]">
+              Get Started <ArrowRight className="w-4 h-4" />
             </button>
           </div>
 

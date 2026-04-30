@@ -12,7 +12,8 @@ import {
   SidebarTrigger,
   useSidebar,
 } from "@/components/ui/sidebar";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
+import { useAuth } from "@/contexts/AuthContext";
 
 const navItems = [
   { title: "Dashboard", url: "/app", icon: BarChart3 },
@@ -67,6 +68,20 @@ function AppSidebarContent() {
   );
 }
 
+function LogoutButton() {
+  const { logout } = useAuth();
+  const navigate = useNavigate();
+  return (
+    <button
+      onClick={() => { logout(); navigate('/login'); }}
+      className="flex items-center gap-1.5 text-sm text-muted-foreground hover:text-foreground transition-colors px-2 py-1.5 rounded-lg hover:bg-secondary"
+    >
+      <LogOut className="w-4 h-4" />
+      <span className="hidden sm:inline">Sign out</span>
+    </button>
+  );
+}
+
 export default function AppLayout({ children }: { children: React.ReactNode }) {
   return (
     <SidebarProvider>
@@ -76,6 +91,7 @@ export default function AppLayout({ children }: { children: React.ReactNode }) {
           <header className="h-14 flex items-center border-b border-border/50 px-4 bg-card/50 backdrop-blur-sm sticky top-0 z-10">
             <SidebarTrigger className="mr-4" />
             <div className="flex-1" />
+            <LogoutButton />
           </header>
           <main className="flex-1 bg-background overflow-auto">
             {children}
